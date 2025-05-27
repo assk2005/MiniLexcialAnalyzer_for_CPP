@@ -1,0 +1,11 @@
+emsdk:
+cd E:\Projects\Mini Lexical Analyzer\emsdk
+emsdk install latest
+emsdk activate latest
+emsdk_env.bat
+emcc -v
+emcc lexer.cpp -o lexer.js -s EXPORTED_FUNCTIONS="['_analyze']" -s EXPORTED_RUNTIME_METHODS="['cwrap']" -s MODULARIZE=1 -s EXPORT_NAME="createLexerModule"
+
+python:
+python -m http.server 8080
+http://localhost:8080/
