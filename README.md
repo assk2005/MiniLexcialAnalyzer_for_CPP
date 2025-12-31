@@ -18,10 +18,13 @@ This project implements a compiler-style lexical analyzer in C++ that processes 
 - C++ File Handling
 
 ## Repository Structure
+```
 MiniLexcialAnalyzer_for_CPP/
 ├── codes/
-│   ├── main.cpp
-│   ├── lexer.cpp
-│   ├── lexer.h
+│ ├── main.cpp
+│ ├── lexer.cpp
+│ ├── lexer.h
 ├── testing/
 └── README.md
+```
+
